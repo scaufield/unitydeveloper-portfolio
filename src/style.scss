@@ -1,0 +1,156 @@
+@import 'src/assets/styles/bootstrap-scss/bootstrap-grid.scss';
+@import "src/assets/styles/utils/variables.scss";
+@import "src/assets/styles/utils/fonts.scss";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: $background;
+  font-family: $fontFamily;
+  color: $heading;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cfa5f1;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+//Icon font size
+.fa-xs{
+  font-size: .75em;
+}
+
+.fa-sm {
+  font-size: .875em;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -.0667em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+
+//Spacing
+.section-spacing{
+  padding-top: 90px;
+}
+
+.mt-spacing{
+  padding-top: 70px;
+}
+
+.ml-spacing{
+  padding-left: 70px;
+}
+
+
+
+//Text Styles
+
+.display-bold{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 1px;
+}
+
+.display-medium{
+  font-weight: normal;
+}
+
+.text-small{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  color: $paragraph;
+}
+
+.heading{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+
+
+.subtitle-text{
+  font-weight: 300;
+  color: #A5ADBB;
+  font-size: 16px;
+}
+
+@media  (max-width: 576px) {
+  .display-bold {
+    font-size: $ms-heading;
+  }
+  h4.heading{
+    font-size: $ms-heading;
+  }
+}
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px
+}
+
+::-webkit-scrollbar-track {
+  background-color:#171717
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color:#0D0D0D;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color:#616161;
+}
+
+::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}

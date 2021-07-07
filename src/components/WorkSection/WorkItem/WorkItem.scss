@@ -1,0 +1,45 @@
+@import 'src/assets/styles/utils/variables.scss';
+
+.work-item {
+
+  .work-item__date {
+    font-weight: normal;
+    font-size: 14px;
+    color: $secondary;
+    line-height: 30px;
+  }
+  .work-item__role {
+    font-weight: 800;
+    font-size: 14px;
+    color: $white;
+
+  }
+  .work-item__work-org.work-org {
+    display: flex;
+    line-height: 35px;
+    .work-org__logo {
+      i {}
+    }
+    .work-org__name {
+      font-weight: 600;
+      color: $white;
+      font-size: 14px;
+      margin-right: 12px;
+    }
+    .work-org__location {
+      font-weight: 100;
+      color: $white;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+  }
+  .work-item__body {
+
+    .work-item__text {
+      font-size: 14px;
+      color: $white;
+      line-height: 21px;
+      font-weight: 400;
+    }
+  }
+}

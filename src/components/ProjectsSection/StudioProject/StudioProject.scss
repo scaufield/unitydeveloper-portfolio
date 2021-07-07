@@ -1,0 +1,146 @@
+@import 'src/assets/styles/utils/variables.scss';
+
+.studio-project-card {
+  background: #0D0D0D;
+  border-radius: 15px;
+  //height: 716px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .studio-project-card__img {
+    height: 320px;
+    background-color: #fff;
+    object-fit: cover;
+  }
+
+  .studio-project-card__header {
+    //height: 135px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .studio-project-card__header__top {
+      display: flex;
+      justify-content: space-between;
+
+
+      .studio-project-card__project-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+
+    }
+  }
+
+      .studio-project-card__links {
+        display: flex;
+        justify-content: center;
+      }
+
+        .studio-project-card__link-item {
+          margin: 10px;
+          transition: 0.3s;
+          display: inline-block;
+          height: 1rem;
+        }
+        .studio-project-card__link-item:hover{
+          transform: scale(1.2);
+          transition: 0.3s;
+          color: #AE9FE0FF;
+        }
+
+
+
+
+
+
+
+
+    .studio-project-card__header__bottom {
+      display: flex;
+      flex-direction: column;
+      .studio-project-card__studio-name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 32px;
+        color: #BCA4FF;
+        margin-top: 5px;
+      }
+
+      .studio-project-card__roles {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+
+        .role-item {
+          padding: 3px 15px 0 15px;
+          border: 1px solid #D7D8D9;
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: 0.2em;
+          color: #FFFFFF;
+          margin: 5px 5px;
+          text-transform: uppercase;
+        }
+    }
+
+  }
+
+  .studio-project-card__body {
+    .studio-project-card__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      color: #6E798C;
+      height: 175px;
+      overflow: auto ;
+      margin: 20px 0;
+    }
+
+    .studio-project-card__button {
+      display: flex;
+      justify-content: stretch;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .studio-project-card__text{
+    height: 125px !important;
+
+  }
+}
+
+@media (max-width: 576px){
+  .studio-project-card__text{
+    height: 195px !important;
+  }
+}
+
+@media (max-width: 576px){
+  .studio-project-card__text{
+    height: 100%;
+  }
+  .role-item {
+    padding: 3px 5px 0 5px !important;
+  }
+}
+

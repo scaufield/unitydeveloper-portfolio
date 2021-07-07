@@ -1,0 +1,139 @@
+@import "src/assets/styles/utils/variables.scss";
+
+.header {
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    // border-bottom: 1px solid #1c1b1b;
+    background-color: rgba(0,0,0,.8);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    // .header__content
+
+    &__content {
+    }
+
+    // .header__menu
+
+    &__menu {
+
+        
+    }
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // .menu__icon
+
+    &__icon {
+        color: $heading;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    // .menu__body
+
+    &__body {
+    }
+
+    // .menu__list
+
+    &__list {
+        /* Auto Layout */
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        padding: 18px 18px;
+    }
+
+    // .menu__link
+
+    &__link {
+        font-weight: bold;
+        font-size: 15px;
+        color: $heading;
+        letter-spacing: 0.75px;
+        position: relative;
+        margin-right: 33px;
+        transition:all 0.5s ease;
+
+        &:hover {  
+            color: $primaryLight;
+        }  
+
+    
+        &:hover:after {  
+            content: close-quote;  
+            text-align: center;    
+            background: #ddd;  
+            float: center;  
+            position: absolute;   
+            border-radius: 25px;  
+            display: block;  
+            height: 8px;  
+            width: 8px;  
+            left: 50%;
+            top: 110%;
+            transition:all 0.5s ease;
+        }
+
+    }
+}
+
+.icon-menu {
+}
+
+
+.main {
+}
+
+.menu-active:after{
+    content: close-quote;
+    text-align: center;
+    background: #ddd;
+    float: center;
+    position: absolute;
+    border-radius: 25px;
+    display: block;
+    height: 8px;
+    width: 8px;
+    left: 50%;
+    top: 110%;
+    transition:all 0.5s ease;
+
+}
+
+@media (max-width: 537px) {
+    .menu__icon{
+        display: none;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .menu__list{
+        padding: 17px;
+    }
+
+    .menu__link{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 377px) {
+    .menu__list{
+        padding: 15px;
+    }
+
+    .menu__link{
+        margin-right: 18px;
+        font-size: 15px;
+    }
+}

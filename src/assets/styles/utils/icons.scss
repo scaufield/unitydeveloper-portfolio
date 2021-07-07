@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'icons';
+    src:  url('../../fonts/icons.eot?79tpb5');
+    src:  url('../../fonts/icons.eot?79tpb5#iefix') format('embedded-opentype'),
+      url('../../fonts/icons.ttf?79tpb5') format('truetype'),
+      url('../../fonts/icons.woff?79tpb5') format('woff'),
+      url('../../fonts/icons.svg?79tpb5#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="_icon-"]::before, [class*=" _icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ._icon-activity:before {
+    content: "\e900";
+    color: #a5adbb;
+  }
+  ._icon-appstore_white:before {
+    content: "\e901";
+    color: #fff;
+  }
+  ._icon-arrow-down:before {
+    content: "\e902";
+    color: #fff;
+  }
+  ._icon-arrow-right:before {
+    content: "\e903";
+    color: #616161;
+  }
+  ._icon-googleplay:before {
+    content: "\e904";
+    color: #fff;
+  }
+  ._icon-googleplay-circle:before {
+    content: "\e905";
+    color: #fff;
+  }
+  ._icon-discovery:before {
+    content: "\e906";
+    color: #616161;
+  }
+  ._icon-nut:before {
+    content: "\e907";
+    color: #a5adbb;
+  }
+  ._icon-folder:before {
+    content: "\e908";
+    color: #bca4ff;
+  }
+  ._icon-game:before {
+    content: "\e909";
+    color: #a5adbb;
+  }
+  ._icon-githab-circle-dark:before {
+    content: "\e90a";
+    color: #a5adbb;
+  }
+  ._icon-github:before {
+    content: "\e90b";
+  }
+  ._icon-github-circle-white:before {
+    content: "\e90c";
+    color: #fff;
+  }
+  ._icon-graph:before {
+    content: "\e90d";
+    color: #a5adbb;
+  }
+  ._icon-peoplegroup:before {
+    content: "\e90e";
+    color: #616161;
+  }
+  ._icon-Icon-Goals--Needs:before {
+    content: "\e90f";
+  }
+  ._icon-linkedin:before {
+    content: "\e910";
+    color: #a5adbb;
+  }
+  ._icon-linkedin_white:before {
+    content: "\e911";
+    color: #fff;
+  }
+  ._icon-skype:before {
+    content: "\e912";
+    color: #a5adbb;
+  }
+  ._icon-skype-circle:before {
+    content: "\e913";
+    color: #fff;
+  }
+  ._icon-appstore:before {
+    content: "\e914";
+    color: #fff;
+  }
+  ._icon-telegram:before {
+    content: "\e915";
+    color: #a5adbb;
+  }
+  ._icon-telegram-circle:before {
+    content: "\e916";
+    color: #fff;
+  }
+  ._icon-quotes:before {
+    content: "\e917";
+    color: #616161;
+  }
+  ._icon-vk:before {
+    content: "\e918";
+    color: #a5adbb;
+  }
+  ._icon-vk-circle:before {
+    content: "\e919";
+    color: #fff;
+  }
+  ._icon-book:before {
+    content: "\e91f";
+  }

@@ -1,0 +1,122 @@
+@import 'src/assets/styles/utils/variables.scss';
+
+.card-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #26292D;
+  padding: 100px 0;
+
+  .card-item__img {
+    //max-width: 500px;
+    //max-height: 400px;
+    //padding: 88px 73px;
+    //max-width: inherit;
+    //max-height: inherit;
+    object-fit: contain;
+  }
+
+
+  .card-item__body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    .card-item__header {
+      display: flex;
+      align-items: flex-end;
+
+
+
+      .card-item__header__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 27px;
+        color: white;
+      }
+
+      .card-item__header__state {
+        margin-left: 7px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $secondary;
+      }
+    }
+
+    .card-item__subtitle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.75px;
+      color: $white;
+      margin-top: 16px;
+    }
+
+    .card-item__text {
+      margin-top: 16px;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.015em;
+      color: $secondary;
+    }
+
+    .card-item__links {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+
+      .card-item__link-item {
+        margin: 12px;
+        transition: 0.3s;
+      }
+
+      .card-item__link-item:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+        color: $primaryLight;
+      }
+
+    }
+  }
+}
+.card-item__link{
+  color: $primary !important;
+}
+@media (max-width: 1200px){
+  .card-item .card-item__img {
+    //padding: 20px;
+    //max-width: 50%;
+    //height: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .card-item .card-item__img {
+    //padding: 40px;
+    //max-width: 50%;
+    //height: 100%;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .card-item .card-item__img {
+    //padding: 20px;
+    //max-height: 100%;
+    //max-width: 100%;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .card-item__header__title {
+    font-size: 24px !important;
+  }
+}

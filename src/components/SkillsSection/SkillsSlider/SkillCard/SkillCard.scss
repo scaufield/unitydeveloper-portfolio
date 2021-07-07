@@ -1,0 +1,85 @@
+
+@import 'src/assets/styles/utils/variables.scss';
+
+
+.skill-card {
+  width: 350px;
+  height: 250px;
+  padding: 45px;
+  background: $body;
+  border-radius: 32px;
+  margin: 0 20px;
+
+  .skill-card__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .skill-card__icon {}
+    .skill-card__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+  .skill-card__body {
+    display: flex;
+    justify-content: space-around;
+    transition: 0.3s;
+
+    &:hover{
+      background: rgba(30, 28, 28, 0.58);
+      transition: 0.3s;
+      padding: 6px;
+      border-radius: 10px;
+      color: $primary;
+    }
+
+
+
+    .skill-card-button {
+      width: 65px;
+      height: 61.69px;
+      mix-blend-mode: normal;
+      border: 1px solid #302f2f;
+      box-sizing: border-box;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+
+
+      .skill-card-button__icon {
+        color: white;
+        font-size: 1.25rem;
+      }
+    }
+    .skill-card__text-wrapper {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .skill-card__text {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 14px;
+        color: white;
+      }
+      .skill-card__line {
+        display: inline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+
+
+

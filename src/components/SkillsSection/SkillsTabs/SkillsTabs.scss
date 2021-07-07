@@ -1,0 +1,223 @@
+@import "src/assets/styles/utils/variables.scss";
+
+$var2: #ffffff;
+
+.tab {
+    background-color: $bodyLight;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: column;
+    border-radius: 24px;
+    padding: 30px 0;
+    height: 278px;
+
+    h4 {
+        background-color: inherit;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1rem;
+        padding-left: 0;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $body;
+            border-radius: 10px;
+        }
+
+        &.active {
+            border-right: 4px solid $primary;
+            transition: all 0.2s ease-out;
+        }
+    }
+}
+
+.tab-elem {
+    font-weight: 100;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab-elem ._icon-peoplegroup:before {
+    color: #a5adbb;
+}
+
+.tab-elem.active {
+    font-weight: bold;
+    color: $primary;
+}
+
+button.focus {
+    border: none;
+}
+
+.tabcontent {
+    padding: 50px;
+    background-color: $body;
+    border-radius: 44px;
+    height: 100%;
+  //height: inherit;
+}
+
+.tabcontent__title {
+    margin-bottom: 20px;
+}
+
+.tabcontent__text {
+    color: $secondary;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.skill-list-item {
+    list-style: none;
+}
+
+.skill-subtitle {
+    font-size: 17px;
+}
+
+.tabcontent__text {
+    list-style: none;
+}
+
+.cv-card {
+    padding: 35px 10px;
+    display: flex;
+    border-radius: 20px;
+    height: 150px;
+    align-items: center;
+    background: #332A7C url(images/MaskGroup.png);
+    background-size: cover;
+    width:  100%;
+
+
+    // .cv-card__body
+
+    &__body {
+        margin-right: 16px;
+    }
+
+    // .cv-card__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    // .cv-card__subtitle
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        color: #a5adbb;
+    }
+
+    // .cv-card__btn
+
+    &__btn {
+        background: #332a7c;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 12px;
+        width: 64px  !important;
+        height: 64px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    &__btn:hover{
+        background: #493ea3;
+        transform: scale(1.1);
+        transition: 0.3s;
+        box-shadow: 0px 4px 4px rgba(84, 83, 83, 0.17);
+    }
+}
+
+@media (min-width: 576px ) and (max-width: 767px){
+    .cv-card{
+      display: flex;
+       height: inherit;
+        background-size: cover;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+    }
+    .tabcontent{
+        margin-top: 1rem;
+    }
+   .tab{
+       height: 100%;
+       width: 100%;
+     margin-right: 1rem;
+   }
+    .skills-left{
+        display: flex;
+    }
+  .cv-card__title {
+    font-size: 70px;
+  }
+  .cv-card__subtitle {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .cv-card__btn{
+    margin-top: 10px;
+    width: 74px !important;
+    height: 74px !important;
+  }
+}
+
+@media  (max-width: 576px){
+  .cv-card{
+    display: none;
+  }
+
+  .tab{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+
+  .tab h4{
+    padding: 15px;
+    font-size: 17px;
+
+    i{
+      margin-right: 7px;
+    }
+
+
+  }
+
+  .tab h4.active{
+   border: none;
+  }
+
+
+
+  .tabcontent{
+    padding: 35px;
+  }
+  .tabcontent__title{
+    text-align: center;
+  }
+  .tabcontent__text{
+    font-size: $ms-text;
+  }
+}
+
